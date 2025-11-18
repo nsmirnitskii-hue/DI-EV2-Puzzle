@@ -105,7 +105,6 @@ fun Piezas2(n: Int ){
         modifier = Modifier.size(140.dp)
             .padding(4.dp)
             .offset(x = OffsetX, y = OffsetY)
-            .clip(RoundedCornerShape(8.dp))
             .background(colorPiezas(n))
             .pointerInput(Unit) {
                 detectDragGestures { change, dragAmount ->
